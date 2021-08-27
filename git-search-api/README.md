@@ -1,6 +1,7 @@
 <h1 align=center >Let's Quote</h1>
 
-<p align=center >Quote is an application that allows users to upload quotes. The quotes can then be up voted, down voted or deleted, 8th August 2021</p>
+<p align=center >This a git hub search API where the user is able to search GitHub user name and repositories.
+A Github finder that allows users to search for Github users by username and Github repositories by reponame, 8th August 2021</p>
 
 <p align="center"> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1. </p>
 

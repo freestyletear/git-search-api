@@ -1,9 +1,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-
-// import { HttpClientModule } from '@angular/common/http' /* I ADDED THIS */
+import { HttpClientModule } from '@angular/common/http' /* I ADDED THIS */
+/* ON TOP HERE WAS import { HttpModule } from '@angular/http'; */
 
 import { FormsModule } from '@angular/forms';
 
@@ -16,14 +15,14 @@ import { ProfileComponent } from './components/profile/profile.component';
   declarations: [
     AppComponent,
     ProfileComponent,
-
-    // HttpClientModule /* I ADDED THIS */
     
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    FormsModule
+    /*THIS WAS JUST HERE HttpModule,*/
+    FormsModule,
+    HttpClientModule /* I ADDED THIS */
+
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

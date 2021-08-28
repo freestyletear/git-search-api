@@ -1,26 +1,26 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { TitleCardComponent } from './components/title-card/title-card.component';
-import { GithubAppComponent } from './components/github-app/github-app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+
+import { ProfileService } from './services/profile.service';
+
+import { AppComponent } from './app.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleCardComponent,
-    GithubAppComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

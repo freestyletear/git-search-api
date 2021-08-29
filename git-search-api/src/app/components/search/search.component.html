@@ -1,1 +1,22 @@
-<p>search works!</p>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-hearder bg-secondary text white">
+                    <h4>Github Search Api</h4>
+                </div>
+                <div class="card-bdoy">
+                    <form class="form-inline" >
+                        <div class="form-group">
+                            <input [(ngModel)]="searchUser" name="searchUser" size="40" type="search">
+                        </div>
+                        <div>
+                            <input (click)="searchButton()" type="Submit" value="Search" class="btn btn-secondary btn-sm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

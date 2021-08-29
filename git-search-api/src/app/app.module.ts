@@ -4,6 +4,10 @@ import { AppComponent } from './app.component';
 import { RepoComponent } from './components/repo/repo.component';
 import { UserComponent } from './components/user/user.component';
 import { SearchComponent } from './components/search/search.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +19,9 @@ import { SearchComponent } from './components/search/search.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule
 
   ],
   providers: [],

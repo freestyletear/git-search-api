@@ -29,13 +29,6 @@ export class UserComponent implements OnInit {
 
 }
 
-
-
-
-
-
-
-
 // import { Component, OnInit } from '@angular/core';
 // import { User } from 'src/app/user';
 // import { ProviderService } from 'src/app/provider.service';

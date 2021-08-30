@@ -7,6 +7,7 @@ import { SearchComponent } from './components/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './components/footer/footer.component';
 // import { HighlightDirective } from './highlight.directive';
 // import { DateAgoPipe } from './pipes/date-ago.pipe';
 // import { NavComponent } from './components/nav/nav.component';
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     // RepoComponent,
     UserComponent,
     SearchComponent,
+    FooterComponent,
     // HighlightDirective,
     // DateAgoPipe,
     // NavComponent,

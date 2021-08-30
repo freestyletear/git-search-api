@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../classes/user';
+import { ResponseDataService } from '../services/response-data.service';
+
+import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/user';
 import { ProviderService } from 'src/app/provider.service';
 
@@ -7,27 +11,77 @@ import { ProviderService } from 'src/app/provider.service';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
-  userProfile: User[] = [];
-
-  constructor(public providerService: ProviderService) { }
-
-  getUser(searchUser: any) {
-    this.providerService.getUser(searchUser).then(
-      (success) => {
-        this.userProfile = this.providerService.userProfile;
-      },
-      (error) => {
-        return error;
-      }
-    )
-  }
+export class HomepageComponent implements OnInit {
+  userDetails: User;
+  userRepositories;
+  constructor(private responseUserDataService: ResponseDataService) {}
 
   ngOnInit(): void {
-    this.getUser('freestyletear');
+    this.getUserDetails('freestyletear);
+    this.getUserRepositories('freestyletear');
   }
 
+  // user details
+  getUserDetails(githubUsername) {
+    this.responseUserDataService.getUserRequest(githubUsername).then(
+      (response) => {
+        this.userDetails = this.responseUserDataService.userGottenDetails;
+      },
+      (error) => {
+        console.log(error);
+      }
+    ); // end of getUserRequest
+  }
+
+  // userRepositories
+  getUserRepositories(githubUsername) {
+    this.responseUserDataService.getUserRepositoryRequest(githubUsername).then(
+      (response) => {
+        this.userRepositories = this.responseUserDataService.userRepositories;
+        console.log(this.userRepositories);
+      },
+      (error) => {
+        console.log(error);
+      }
+    ); // end of getUserRepositoryRequest
+  }
 }
+
+
+
+
+
+
+// import { Component, OnInit } from '@angular/core';
+// import { User } from 'src/app/user';
+// import { ProviderService } from 'src/app/provider.service';
+
+// @Component({
+//   selector: 'app-user',
+//   templateUrl: './user.component.html',
+//   styleUrls: ['./user.component.css']
+// })
+// export class UserComponent implements OnInit {
+//   userProfile: User[] = [];
+
+//   constructor(public providerService: ProviderService) { }
+
+//   getUser(searchUser: any) {
+//     this.providerService.getUser(searchUser).then(
+//       (success) => {
+//         this.userProfile = this.providerService.userProfile;
+//       },
+//       (error) => {
+//         return error;
+//       }
+//     )
+//   }
+
+//   ngOnInit(): void {
+//     this.getUser('freestyletear');
+//   }
+
+// }
 
 
 

@@ -18,14 +18,17 @@
                                     <h2 class="text-align-left lead">{{git.bio}}</h2>
                                 </div>
                                 <div>
+                                    <h1>{{git.location}}</h1>
+                                </div>
+                                <div>
                                     <a href="{{git.html_url}}" class="btn btn-primary text-center" type="button">GITHUB</a>
                                 </div>
                             </div>
                             <div class="brake-down">
-                                <div>
-                                    <h2 class="bg-secondary">Followers:{{git.followers}}</h2>
-                                    <h2 class="bg-secondary">Folowing : {{git.following}}</h2>
-                                    
+                                <div class="right">
+                                    <h2 class="bg-secondary not-active">Followers:{{git.followers}}</h2>
+                                    <h2 class="bg-secondary not-active">Folowing : {{git.following}}</h2>
+                                    <h2 class="bg-info">Repositories:{{git.public_repos}}</h2>
                                 </div>
                             </div>
                         </div>

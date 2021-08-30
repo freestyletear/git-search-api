@@ -15,5 +15,6 @@ export class User {
     email: any;
     hireable: any;
     logged_at: any;
+    repos_url: any;
     constructor(){}
 }

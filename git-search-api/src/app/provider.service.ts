@@ -39,6 +39,7 @@ export class ProviderService {
       hireable: any;
       company: any;
       logged_at: any;
+      repos_url: any;
     }
     return new Promise <void>((resolve, reject) => {
       this.userProfile = [];

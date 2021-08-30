@@ -1,4 +1,4 @@
-<h1 align=center >Let's Quote</h1>
+<h1 align=center >Git Search Api</h1>
 
 <p align=center >This a git hub search API where the user is able to search GitHub user name and repositories, 8th August 2021</p>
 
@@ -7,7 +7,7 @@
 ==========================================================================================================
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=freestyletear" alt="freestyletear github profile trophy's" /></a> </p>
 
-[![GitHub Issues](https://img.shields.io/github/issues/freestyletear/Keith_James_Akan_Name_Generator)](https://freestyletear.github.io/Keith_James_Akan_Name_Generator/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/freestyletear/Keith_James_Akan_Name_Generator)](https://freestyletear.github.io/git-search-api/issues)
 
 <!-- ---
 
@@ -35,7 +35,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 To fix a bug or enhance an existing module, follow these steps:
 
-- Fork the repo reach out to (https://github.com/freestyletear/quote-angular-trial/fork)
+- Fork the repo reach out to (https://github.com/freestyletear/git-search-api/fork)
 - Create a new branch (`git checkout -b improve-feature`)
 - Make the appropriate changes in the files
 - Add changes to reflect the changes made
@@ -59,23 +59,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Features
-
-1. Allows users to enter quotes and display back to the user.
-2. The user can view the Quotes, author and number of days it was logged which appear on the quote section.
-3. Clicking on the `see more` and `see less` buttons will enable the toggle effect user can view the number of upvotes downvotes, delete a quote button and get to know when it was submitted.
-4. User can vote for a quote by clicking `Upvote` or `Downvote` and see the changes.
-5. User can also delete their quote by clicking `delete quote`.
-6. The quote with the greatest number of votes is highlighted in blue.
-
-## Behaviour Driven Development
-
-| Behaviour | Input | Output |
-| --------- | ------| ------ |
-| Create new quote | Quote, Author, Name| Displays Quote, Author, Submittion date and more details|
-| Upvote | On the quote Click on the `see more` then click `thumbs up` icon button | Increased number of upvotes|
-| Downvote | On the quote Click on the `see more` button then click `thumbs down` icon button|  Increased number of downvotes|
-| Delete a quote | Click the `bucket` icon with the word Delete besides it then click `delete quote`| Quote is deleted |
 
 ## Known Bugs
 As of now this is not applicable.
@@ -86,7 +69,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Setup/Installation Requirements
 * Clone this repo to your machine 
-* `git clone https://github.com/freestyletear/quote-angular-trial.git`
+* `git clone https://github.com/freestyletear/git-search-api.git`
 * `cd into akan_name_generator`
 * Navigate to index.html  and open it on your favorite browser
 Your browser must be JavaScript enabled for this to work
@@ -94,21 +77,13 @@ Your browser must be JavaScript enabled for this to work
 ---
 ### Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/quote-angular-trial/issues/new) by including your search query and the expected result.
-
----
-
-## Sources
-
-- 👨‍💻<p align="left"> <img width="800" height="500" src="https://raw.githubusercontent.com/freestyletear/quote-angular-trial/master/Quotify/src/assets/Screenshot%20from%202021-08-23%2006-22-26.png" alt="" /> </p>
-
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/git-search-api/issues/new) by including your search query and the expected result.
 
 ---
 
 ## To-do
-1. Store quote entries in a database
-2. Improve functionality of voting buttons to ensure one can only like OR dislike a quote
-3. Add custom validations to the form to prevent submission of inputs with just whitespace
+1. Store user information in a database
+2. Gain more knowledge on using angular
 
 ## 📫 Support and contact details
 

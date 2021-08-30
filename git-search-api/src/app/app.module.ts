@@ -12,7 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 // import { HighlightDirective } from './highlight.directive';
 // import { DateAgoPipe } from './pipes/date-ago.pipe';
 import { NavComponent } from './components/nav/nav.component';
-// import { NotFoundComponent } from './components/not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
@@ -26,7 +26,7 @@ import { NavComponent } from './components/nav/nav.component';
     // HighlightDirective,
     // DateAgoPipe,
     NavComponent,
-    // NotFoundComponent,
+    NotFoundComponent,
     
   ],
   imports: [

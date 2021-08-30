@@ -16,3 +16,24 @@
     width: 100px;
     font-size: 17px;
 }
+
+
+
+
+/* Beginnin of Media Queries */
+@media only screen and (max-width: 1035px) {
+
+    .search-input {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+
+    .search-input {
+        width: 390px;
+        margin-right: 20px;
+    }
+
+}

@@ -44,40 +44,13 @@ a#two.btn {
     margin-top: 15px;
 }
 
+@media only screen and (max-width: 1200px) {
 
+    .add-breakdown-down{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-/* .card-repo {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    width: 100%;
-    margin: auto auto auto auto;
 }
-
-.card {
-    max-width: 380px;
-    max-height: 300vh;
-}
-
-.person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-
-.person:hover {
-    border-color: #f1f1f1;
-}
-
-.jumbotron {
-    background-color: rgba(23, 25, 40, 0.8);
-}
-
-.cardp .jumbotron {
-    background-color: #12121212;
-}
-
-.fa-file-code-o {
-    color: red;
-} */

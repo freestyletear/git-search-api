@@ -1,0 +1,7 @@
+p {
+    color: rgb(65, 50, 50);
+    font-size: 15px;
+}
+p span {
+    font-weight: bold;
+}

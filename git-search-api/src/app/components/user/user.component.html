@@ -1,3 +1,61 @@
+<app-search (searchEmitter)= getUser($event)></app-search>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div *ngFor="let git of userProfile">
+                        <div class="add-breakdown-down">
+                            <div class="left">
+                                <div class="card-img">
+                                    <img src="{{git.avatar_url}}" alt="github-profile-image">
+                                </div>
+                                <div class="card-title text-center">
+                                    <h1>{{git.name}}</h1>
+                                     <h1>{{git.login}}</h1>
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="text-align-left lead">{{git.bio}}</h2>
+                                </div>
+                                <div>
+                                    <a href="{{git.html_url}}" class="btn btn-primary text-center" type="button">GITHUB</a>
+                                </div>
+                            </div>
+                            <div class="brake-down">
+                                <div>
+                                    <h2 class="bg-secondary">Followers:{{git.followers}}</h2>
+                                    <h2 class="bg-secondary">Folowing : {{git.following}}</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+                        <h2>Location: {{git.location}}</h2>
+                        
+                        <h2>Blog: {{git.blog}}</h2>
+                        <h2>Twitter Username: {{git.twitter_username}}</h2>
+                        <h2>Up for hire: {{git.hireable}}</h2>
+                        <h2>home page: {{git.html_url}}</h2> -->
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- this was comented like this after line 3 <app-repo></app-repo> -->
 
 <!-- <div class="container-fluid">
@@ -97,18 +155,6 @@
 
 
 
-
-<app-search (searchEmitter)= getUser($event)></app-search>
-<div *ngFor="let git of userProfile">
-    <h1>Github Name: {{git.login}}</h1>
-    <img src="{{git.avatar_url}}" alt="">
-    <h2>Followers: {{git.followers}}</h2>
-    <h2>Location: {{git.location}}</h2>
-    <h2>Folowing: {{git.following}}</h2>
-    <h2>Blog: {{git.blog}}</h2>
-    <h2>Twitter Username: {{git.twitter_username}}</h2>
-    <h2>Up for hire: {{git.hireable}}</h2>
-</div>
 
 
 

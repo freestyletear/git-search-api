@@ -1,4 +1,38 @@
-.card-repo {
+.card-img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 1.5%;
+}
+.card-title h1 {
+    /* margin-left: 15%; */
+    margin-top: 1%;
+}
+.add-breakdown-down{
+    display: flex;
+    flex-direction: row;
+}
+.card-text h2 {
+    width: 350px;
+}
+.brake-down div {
+    display: flex;
+    flex-direction: row;
+}
+.brake-down h2 {
+    padding: 10px;
+    margin: 20px;
+}
+.add-breakdown-down .left{
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+    padding: 10px 30px 10px 20px;
+    box-shadow: 1px -1px 8px rgba(0,0,0,0.2);
+}
+
+
+
+/* .card-repo {
     display: grid;
     grid-template-columns: 400px 400px;
     width: 100%;
@@ -32,4 +66,4 @@
 
 .fa-file-code-o {
     color: red;
-}
+} */

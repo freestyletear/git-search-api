@@ -8,9 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
 // import { HighlightDirective } from './highlight.directive';
 // import { DateAgoPipe } from './pipes/date-ago.pipe';
-// import { NavComponent } from './components/nav/nav.component';
+import { NavComponent } from './components/nav/nav.component';
 // import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
@@ -21,9 +22,10 @@ import { FooterComponent } from './components/footer/footer.component';
     UserComponent,
     SearchComponent,
     FooterComponent,
+    AboutComponent,
     // HighlightDirective,
     // DateAgoPipe,
-    // NavComponent,
+    NavComponent,
     // NotFoundComponent,
     
   ],

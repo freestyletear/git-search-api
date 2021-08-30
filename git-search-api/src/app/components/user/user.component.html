@@ -1,6 +1,148 @@
+    <!-- this was comented like this after line 3 <app-repo></app-repo> -->
+
+<!-- <div class="container-fluid">
+
+    <app-search (searchEmitter)='getUser($event)'></app-search>
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="jumbotron joker">
+
+                <div *ngFor='let detail of user'>
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="{{detail.avatar_url}}" alt="" class="img-circle person">
+                        </a>
+                        <div class="cardp">
+                            <div class="jumbotron">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fa fa-user-circle-o" aria-hidden="true"></i> {{detail.name}}</h5>
+                                    <p class="card-text">{{detail.login}}</p>
+                                    <p class="card-text"><i class="fa fa-address-book" aria-hidden="true" *ngIf='detail.bio'></i> {{detail.bio}}</p>
+                                    <hr>
+                                    <button class="btn btn-secondary"> Follow </button>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p class="card-text"><i class="fa fa-user-plus" aria-hidden="true"></i> {{detail.followers}} <small>FOLLOWERS</small>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p class="card-text">{{detail.following}} <small>FOLLOWING</small> </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p class="card-text">{{detail.stargazers_count}} <i class="fa fa-star" aria-hidden="true"></i>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <p class="card-text"><i class="fa fa-building" aria-hidden="true" *ngIf='detail.company'></i> {{detail.company}}</p>
+                                    <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true" *ngIf='detail.location'></i> {{detail.location}}</p>
+                                    <p class="card-text"><i class="fa fa-twitter" aria-hidden="true" *ngIf='detail.twitter_username'></i> {{detail.twitter_username}}</p>
+                                    <p class="card-text"><i class="fa fa-calendar" aria-hidden="true"></i> Joined on: {{detail.created_at|date}}</p>
+                                    <br>
+                                    <a href="{{detail.html_url}}" target="_blank" class="btn btn-outline-warning"><small>GITHUB</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h1>REPOSITORIES.</h1>
+            <hr>
+
+            <div class="card-repo">
+                <div *ngFor='let repo of myRepo '>
+                    <div class="card text-center" appHighlight>
+                        <div class="card-header">
+                            <a href="{{repo.html_url}}">
+                                <h5 class="card-title">{{repo.name}}</h5>
+                            </a>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">{{repo.description}}</p>
+
+                            <p class="card-text"><i class="fa fa-file-code-o" aria-hidden="true" *ngIf='repo.language'></i> {{repo.language}}</p>
+
+
+                            <p class="card-text">CREATED: {{repo.created_at|dateAgo}}</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#" class="btn btn-outline-secondary"><i class="fa fa-eye" aria-hidden="true"></i> {{repo.watchers}}</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-outline-secondary"><i class="fa fa-code-fork" aria-hidden="true"></i> {{repo.forks_count}}</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="{{repo.html_url}}"> <button class="btn btn-outline-secondary">CLICK TO VIEW</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+
+
+
+
+
 <app-search (searchEmitter)= getUser($event)></app-search>
 <div *ngFor="let git of userProfile">
     <h1>Github Name: {{git.login}}</h1>
     <img src="{{git.avatar_url}}" alt="">
     <h2>Followers: {{git.followers}}</h2>
+    <h2>Location: {{git.location}}</h2>
+    <h2>Folowing: {{git.following}}</h2>
+    <h2>Blog: {{git.blog}}</h2>
+    <h2>Twitter Username: {{git.twitter_username}}</h2>
+    <h2>Up for hire: {{git.hireable}}</h2>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- login: any;
+    name: any;
+    avatar_url: any;
+    location: any;
+    followers: any;
+    following: any;
+    public_repos: any;
+    blog: any;
+    html_url: any;
+    bio: any;
+    twitter_username: any;
+    _repos: any;
+    created_at: any;
+    email: any;
+    hireable: any; -->

@@ -1,20 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { RepoComponent } from './components/repo/repo.component';
+// import { RepoComponent } from './components/repo/repo.component';
 import { UserComponent } from './components/user/user.component';
 import { SearchComponent } from './components/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+// import { HighlightDirective } from './highlight.directive';
+// import { DateAgoPipe } from './pipes/date-ago.pipe';
+// import { NavComponent } from './components/nav/nav.component';
+// import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RepoComponent,
+    // RepoComponent,
     UserComponent,
     SearchComponent,
+    // HighlightDirective,
+    // DateAgoPipe,
+    // NavComponent,
+    // NotFoundComponent,
     
   ],
   imports: [

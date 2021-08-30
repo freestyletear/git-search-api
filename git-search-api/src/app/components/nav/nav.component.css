@@ -1,11 +1,18 @@
-    nav {
-        background-color: #121212;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .navbar-brand,
-    .navbar-toggler,
-    .nav-link {
-        color: #fff;
-    }
+.navbar-brand,
+.navbar-toggler,
+.nav-link {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-top: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.nav-item {
+    font-size: 17px;
+}

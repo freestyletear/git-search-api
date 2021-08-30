@@ -1,0 +1,11 @@
+.jumbotron {
+     background-color: darkblue;
+}
+.display-4 {
+    font-weight: bold;
+    color: #fff;
+}
+p {
+    color: rgb(0,0,0);
+    font-weight: bolder;
+}

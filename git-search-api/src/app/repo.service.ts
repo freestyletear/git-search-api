@@ -8,26 +8,35 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RepoService {
-  repo:Repos[]=[];
+  repo:Repos;
   apiURL= 'https://api.github.com/users/';
   token=`?access_token=${environment.accessToken}`
 
-  constructor(public http:HttpClient) { }
+  constructor(public http:HttpClient) {
+    this.repo = new Repos('','','','','','','','','','','')
+  }
 
-  getRepo(searchTerm:string):Observable<any>{
-    interface data {
+  getRepo(searchTerm:string){
+    interface repodata {
       description:any;
       name:any;
-      owner:any;
-      viewers:any;
       forks:any;
-      default_branch:any;
-      language:any;
       html_url: any;
       watchers: any;
       created_at: any;
-      forks_count: any;
+      open_issue: any;
     }
-    return this.http.get(this.apiURL + searchTerm+ '/repos'+ this.token);
+    // https://api.github.com/users/freestyletear/repos?access_token=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
+
+    return new Promise <void>((resolve, reject) => {
+      this.http.get <repodata>(this.apiURL + searchTerm + '/repos' + this.token).toPromise().then(
+        (results) => {this.repo = results;
+          resolve();
+        },
+          (error) => {
+            reject(error);
+          }
+      )
+    })
   }
 }

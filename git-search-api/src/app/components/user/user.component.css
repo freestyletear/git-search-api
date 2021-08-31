@@ -43,7 +43,36 @@
 a#two.btn {
     margin-top: 15px;
 }
+#repositories .row .col .card .card-body ul {
+    display: flex;
+    flex-direction: row;
+}
 
+#repositories .row .col .card .card-body ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+#title {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#repositories {
+    overflow: scroll;
+    height: 500px;
+}
+#repositories p {
+    font-size: 17px;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+}
 @media only screen and (max-width: 1200px) {
 
     .add-breakdown-down{

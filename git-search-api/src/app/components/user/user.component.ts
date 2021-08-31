@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/user';
 import { ProviderService } from 'src/app/provider.service';
+import { RepoService } from 'src/app/repo.service';
 
 @Component({
   selector: 'app-user',
@@ -9,10 +10,12 @@ import { ProviderService } from 'src/app/provider.service';
 })
 export class UserComponent implements OnInit {
   userProfile: User[] = [];
+  repo: any;
 
-  constructor(public providerService: ProviderService) { }
+  constructor(public providerService: ProviderService, private repoService: RepoService) { }
 
   getUser(searchUser: any) {
+    this.getUserRepository(searchUser)
     this.providerService.getUser(searchUser).then(
       (success) => {
         this.userProfile = this.providerService.userProfile;
@@ -23,51 +26,21 @@ export class UserComponent implements OnInit {
     )
   }
 
+  getUserRepository(searchUser: any) {
+    this.repoService.getRepo(searchUser).then(
+      (success) => {
+        this.repo = this.repoService.repo;
+            console.log(this.repo)
+      },
+      (error) => {
+        return error;
+      }
+    )
+  }
+
   ngOnInit(): void {
     this.getUser('freestyletear');
+    this.getUserRepository('freestyletear')
   }
 
 }
-
-// import { Component, OnInit } from '@angular/core';
-// import { User } from 'src/app/user';
-// import { ProviderService } from 'src/app/provider.service';
-// import { Repos } from 'src/app/repos';
-// import { RepoService } from 'src/app/repo.service';
-
-// @Component({
-//   selector: 'app-user',
-//   templateUrl: './user.component.html',
-//   styleUrls: ['./user.component.css']
-// })
-// export class UserComponent implements OnInit {
-//   userProfile: User[] = [];
-//   myRepo: Repos[] = [];
-
-//   constructor(public providerService: ProviderService) { }
-
-//   getUser(searchUser: any) {
-//     this.providerService.getUser(searchUser).then(
-//       (success) => {
-//         this.userProfile = this.providerService.userProfile;
-//       },
-//       (error) => {
-//         return error;
-//       }
-//     );
-//     this.providerService.getRepo(searchUser).subscribe(
-//     (success: Repos)=>{
-//       this.myRepo=success
-//       return(this.myRepo)
-//         // console.log(this.myRepo)
-    
-//       }
-     
-//   )
-//   }
-
-//   ngOnInit(): void {
-//     this.getUser('freestyletear');
-//   }
-
-// }

@@ -9,10 +9,6 @@
 
 [![GitHub Issues](https://img.shields.io/github/issues/freestyletear/Keith_James_Akan_Name_Generator)](https://freestyletear.github.io/git-search-api/issues)
 
-<!-- ---
-
-## Description -->
-
 ---
 
 ## Languages and Tools

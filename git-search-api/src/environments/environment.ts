@@ -7,6 +7,11 @@ export const environment = {
   accessToken: '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',
 };
 
+// export const environment = {
+//   production: true,
+//   baseiUrl:   'http://localhost:4200/api', 
+// };
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

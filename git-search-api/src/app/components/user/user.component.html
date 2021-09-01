@@ -1,34 +1,35 @@
 <app-search (searchEmitter)= getUser($event)></app-search>
-<div class="container mt-3">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <div *ngFor="let git of userProfile">
-                        <div class="add-breakdown-down">
-                            <div class="left">
-                                <div class="card-img">
-                                    <img src="{{git.avatar_url}}" alt="github-profile-image">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div *ngFor="let git of userProfile">
+                            <div class="add-breakdown-down">
+                                <div class="left">
+                                    <div class="card-img">
+                                        <img src="{{git.avatar_url}}" alt="github-profile-image">
+                                    </div>
+                                    <div class="card-title text-center">
+                                        <h1>{{git.name}}</h1>
+                                        <h1>{{git.login}}</h1>
+                                    </div>
+                                    <div class="card-text">
+                                    <h2 class="text-align-left lead">{{git.bio}}</h2>
+                                    </div>
+                                    <div>
+                                        <h1>{{git.location}}</h1>
+                                    </div>
+                                    <div>
+                                        <a href="{{git.html_url}}" class="btn btn-primary text-center" type="button">GITHUB</a>
+                                    </div>
                                 </div>
-                                <div class="card-title text-center">
-                                     <h1>{{git.name}}</h1>
-                                     <h1>{{git.login}}</h1>
-                                </div>
-                                <div class="card-text">
-                                   <h2 class="text-align-left lead">{{git.bio}}</h2>
-                                </div>
-                                <div>
-                                    <h1>{{git.location}}</h1>
-                                </div>
-                                <div>
-                                    <a href="{{git.html_url}}" class="btn btn-primary text-center" type="button">GITHUB</a>
-                                </div>
-                            </div>
-                            <div class="brake-down">
-                                <div class="right">
-                                    <h2 class="bg-secondary not-active">Followers:{{git.followers}}</h2>
-                                    <h2 class="bg-secondary not-active">Folowing : {{git.following}}</h2>
-                                    <h2 class="bg-info">Repositories:{{git.public_repos}}</h2>
+                                <div class="brake-down">
+                                    <div class="right">
+                                        <h2 class="bg-secondary not-active">Followers:{{git.followers}}</h2>
+                                        <h2 class="bg-secondary not-active">Folowing : {{git.following}}</h2>
+                                        <h2 class="bg-info">Repositories:{{git.public_repos}}</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -37,29 +38,27 @@
             </div>
         </div>
     </div>
-</div>
-<div id="title" class="container mt-3">
-    <h1>Repositories</h1>
-</div>
-<div id="repositories" class="container mt-3">
-    
-    <div class="row">
-        <div class="col">
-            <div *ngFor="let repos of repo">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">{{repos.name}}</div>
-                        <p class="lead">{{repos.description}}</p>
-                        <ul>
-                            <li class="bg-secondary">Total Forks :{{repos.forks}}</li>
-                            <li class="bg-secondary">Watchers :{{repos.watchers}}</li>
-                            <li class="bg-secondary">Open Issues :{{repos.open_issues}}</li>
-                        </ul>
-                        <a href="{{repos.html_url}}" type="button" class="btn btn-success">view repository</a>
+    <div id="title" class="container mt-3">
+        <h1>Repositories</h1>
+    </div>
+    <div id="repositories" class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <div *ngFor="let repos of repo">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">{{repos.name}}</div>
+                            <p class="lead">{{repos.description}}</p>
+                            <ul>
+                                <li class="bg-secondary">Total Forks :{{repos.forks}}</li>
+                                <li class="bg-secondary">Watchers :{{repos.watchers}}</li>
+                                <li class="bg-secondary">Open Issues :{{repos.open_issues}}</li>
+                            </ul>
+                            <a href="{{repos.html_url}}" type="button" class="btn btn-success">view repository</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 

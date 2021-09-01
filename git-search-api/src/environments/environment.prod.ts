@@ -10,5 +10,5 @@
 
 export const environment = {
   production: true,
-  accessToken: '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',
+  accessToken: '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',
 };

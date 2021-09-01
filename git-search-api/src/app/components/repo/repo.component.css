@@ -1,0 +1,85 @@
+.card-img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 1.5%;
+}
+.card-title h1 {
+    /* margin-left: 15%; */
+    margin-top: 1%;
+}
+.add-breakdown-down{
+    display: flex;
+    flex-direction: row;
+}
+.card-text h2 {
+    width: 350px;
+}
+.brake-down div {
+    display: flex;
+    flex-direction: row;
+}
+.brake-down h2 {
+    padding: 10px;
+    margin: 20px;
+}
+.add-breakdown-down .left{
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+    padding: 10px 30px 10px 20px;
+    box-shadow: 1px -1px 8px rgba(0,0,0,0.3);
+}
+.add-breakdown-down .left .btn{
+    height: 30px;
+    width: 100px;
+    font-size: 17px;
+}
+.bg-secondary.not-active {
+    height: 50pxpx;
+}
+.brake-down .right {
+    padding: 10px 30px 10px 20px;
+}
+a#two.btn {
+    margin-top: 15px;
+}
+#repositories .row .col .card .card-body ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#repositories .row .col .card .card-body ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+#title {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#repositories {
+    overflow: scroll;
+    height: 500px;
+}
+#repositories p {
+    font-size: 17px;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+}
+@media only screen and (max-width: 1200px) {
+
+    .add-breakdown-down{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}

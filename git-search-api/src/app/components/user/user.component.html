@@ -38,27 +38,3 @@
             </div>
         </div>
     </div>
-    <div id="title" class="container mt-3">
-        <h1>Repositories</h1>
-    </div>
-    <div id="repositories" class="container mt-3">
-        <div class="row">
-            <div class="col">
-                <div *ngFor="let repos of repo">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">{{repos.name}}</div>
-                            <p class="lead">{{repos.description}}</p>
-                            <ul>
-                                <li class="bg-secondary">Total Forks :{{repos.forks}}</li>
-                                <li class="bg-secondary">Watchers :{{repos.watchers}}</li>
-                                <li class="bg-secondary">Open Issues :{{repos.open_issues}}</li>
-                            </ul>
-                            <a href="{{repos.html_url}}" type="button" class="btn btn-success">view repository</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-

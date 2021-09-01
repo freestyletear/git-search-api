@@ -2,7 +2,7 @@ import { Repos } from 'src/app/repos';
 import { environment } from './../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+// import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,7 @@ export class RepoService {
       created_at: any;
       open_issue: any;
     }
-    // https://api.github.com/users/freestyletear/repos?access_token=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
+    // https://api.github.com/users/freestyletear/repos?access_token=****************************
 
     return new Promise <void>((resolve, reject) => {
       this.http.get <repodata>(this.apiURL + searchTerm + '/repos' + this.token).toPromise().then(
